@@ -1,0 +1,10 @@
+Install Armbian Bionic image by downloading the latest Bionic version for the Cubox-i platform from armbian.
+Use your favorite image writer to write image to microsd. On first boot the image will expand itself.
+Follow Armbian instruction to get the image ready for use.
+
+# sudo apt-get update ; sudo apt-get -y dist-upgrade ; sudo apt-get -y install git
+# sudo useradd -m pi -s /bin/bash
+# echo "pi ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/pi
+# sudo chmod 0440 /etc/sudoer.d/pi
+# sudo su - pi -c "git clone https://github.com/firewalla/firewalla.git"
+# sudo su - pi -c "cd firewalla ; ./buildraw"
